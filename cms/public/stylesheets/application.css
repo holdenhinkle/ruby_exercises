@@ -1,0 +1,20 @@
+/*
+----------------------------------------
+Application CSS
+----------------------------------------
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 1em;
+}
+textarea, input[type=button] {
+ display: block;
+}
+.message p {
+  background-color: yellow;
+  padding: 10px;
+}
+p.signed-in-as {
+  font-style: italic;
+}

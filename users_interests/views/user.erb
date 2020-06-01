@@ -1,0 +1,14 @@
+<h1><%= format_name(@name) %></h1>
+<p>Email: <%= @user[:email] %></p>
+<p>Interests:</p>
+<ul>
+  <% @user[:interests].each do |interest| %>
+    <li><%= interest %></li>
+  <% end %>
+</ul>
+<h2>Other Users</h2>
+<ul>
+  <% other_users(@name).each do |name| %>
+    <li><a href="/users/<%= name.to_s %>"><%= format_name(name) %></a></li>
+  <% end %>
+</ul>

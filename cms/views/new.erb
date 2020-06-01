@@ -1,0 +1,11 @@
+<% if session[:message]%>
+  <div class="message">
+    <p><%= session.delete("message") %></p>
+  </div>
+<% end %>
+
+<form action="/create" method="post">
+  <label for="filename">Add a new document:</p>
+  <input type="text" name="filename" id="filename" value="<%= params[:filename] %>">
+  <button type="submit">create</button>
+</form>
